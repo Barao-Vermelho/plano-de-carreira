@@ -99,7 +99,13 @@ var config = {
 
         HTMLid: "ciso2"
     }
-
+    carreira = {
+	    parent: ciso,
+	    text:{
+		    name: "Desenvolvedor Senior",
+		    description: "Conhecedor das escovas de bits do C, dos padrões de projeto de java, dos parenteses de lisp e das locuras de python"
+	    }
+    }
     ALTERNATIVE = [
         config,
         ceo,
@@ -110,5 +116,6 @@ var config = {
         ciso,
         cio2,
         ciso3,
-        ciso4
+        ciso4,
+	carreira
     ];
