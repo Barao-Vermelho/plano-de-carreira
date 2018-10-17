@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bushido</title>
+</head>
+
+<body>
+<!------------------------------- Menu ------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark fixded-top">
+            <div class="container">
+                <a class="navbar-brand text-white" href="home.html">
+                    BUSHIDO
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar-nav mr-auto" style="font-size: 22px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="carreiras">Todas as Carreiras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="instituicoes">Instituições</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="empreas">Empresas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="sobre">Sobre</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="O que você procura?">
+                    <button class="btn btn-outline-primary my-2 my-lg-0" type="submit">
+                        <span class="oi oi-magnifying-glass"></span>
+                    </button>
+                </form>
+                <a class="nav-item nav-link" data-toggle="modal" data-target="#popUp" href="#" id="login">
+                    <span class="oi oi-person" style="font-size: 22px">  Login</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+<!------------------------------- Login ------------------------------->
+    <div class="modal fade" id="popUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Entrar com e-mail e senha</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="oi oi-x"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputEmail1">E-mail:</label>
+                            <input type="email" class="form-control" id="inputEmail1"  placeholder="Digite seu e-mail">
+                            <a class="form-text text-right text-primary" href="#">Esqueci minha senha</a>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputSenha">Senha:</label>
+                            <input type="password" class="form-control" id="inputSenha" placeholder="Digite sua senha">
+                            <a class="form-text text-right text-primary" href="#">
+                                Não tem uma senha? Cadastre-se agora
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" data-dismiss="modal">
+                        <span class="oi oi-arrow-left"> Voltar</span>
+                    </a>
+                    <button type="submit" class="btn btn-outline-success">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------------------- Main ------------------------------->
+    <h1 class="text-center" style="margin-top: 40px; margin-bottom: 40px; font-size: 50px">Categorias</h1>
+    <div class="container-fluid" style="background-color: #343a40;">
+        <div class="row justify-content-center">
+            <div id="accordion4" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; color: #007bff;"
+                                    data-toggle="collapse"
+                                    data-target="#engenharia">
+                                <span class="titulo-engenharia">Engenharia</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="engenharia"
+                         class="collapse"
+                         data-parent="#accordion4">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Engenheiro(a) Civil</a></li>
+                                    <li style="margin-bottom: 5px"><a href="#">Engenheiro(a) Mecânico(a)</a></li>
+                                    <li style="margin-bottom: 5px"><a href="#">Engenheiro(a) Eletricista</a></li>
+                                    <li><a href="#">Engenheiro(a) Naval</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion5" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; color: #007bff;"
+                                    data-toggle="collapse"
+                                    data-target="#economia">
+                                <span class="titulo-economia">Economia</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="economia"
+                         class="collapse"
+                         data-parent="#accordion5">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Analista de Mercado</a></li>
+                                    <li style="margin-bottom: 5px"><a href="#">Contador(a)</a></li>
+                                    <li><a href="#">Economista</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion6" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; color: #007bff;"
+                                    data-toggle="collapse"
+                                    data-target="#ti">
+                                <span class="titulo-ti">Tecnologia da Informação</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="ti"
+                         class="collapse"
+                         data-parent="#accordion6">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Analista de Sistemas</a></li>
+                                    <li style="margin-bottom: 5px"><a href="#">Desenvolvedor(a) Web</a></li>
+                                    <li><a href="#">Desenvolvedor(a) de Jogos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #B0C4DE;">
+        <div class="row justify-content-center">
+            <div id="accordion7" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; "
+                                    data-toggle="collapse"
+                                    data-target="#design">
+                                <span class="titulo-design">Design</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="design"
+                         class="collapse"
+                         data-parent="#accordion7">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Designer Gráfico</a></li>
+                                    <li><a href="#">Ilustrador(a)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion8" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; "
+                                    data-toggle="collapse"
+                                    data-target="#administracao">
+                                <span class="titulo-administracao">Administração</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="administracao"
+                         class="collapse"
+                         data-parent="#accordion8">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Gerente de Negócios</a></li>
+                                    <li><a href="#">Gestor(a)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion9" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; "
+                                    data-toggle="collapse"
+                                    data-target="#marketing">
+                                <span class="titulo-marketing">Marketing</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="marketing"
+                         class="collapse"
+                         data-parent="#accordion9">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Influenciador(a) Digital</a></li>
+                                    <li><a href="#">Publicitário(a)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #343a40;">
+        <div class="row justify-content-center">
+            <div id="accordion10" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; color: #007bff;"
+                                    data-toggle="collapse"
+                                    data-target="#letras">
+                                <span class="titulo-letras">Letras</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="letras"
+                         class="collapse"
+                         data-parent="#accordion10">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Professor(a) de Inglês</a></li>
+                                    <li><a href="#">Professor(a) de Espanhol</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion11" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; color: #007bff;"
+                                    data-toggle="collapse"
+                                    data-target="#filosofia">
+                                <span class="titulo-fiolosofia">Filosofia</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="filosofia"
+                         class="collapse"
+                         data-parent="#accordion11">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Professor(a)</a></li>
+                                    <li style="margin-bottom: 5px"><a href="#">Consultor(a)</a></li>
+                                    <li><a href="#">Crítico(a) de Produções</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion12" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; color: #007bff;"
+                                    data-toggle="collapse"
+                                    data-target="#historia">
+                                <span class="titulo-historia">História</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="historia"
+                         class="collapse"
+                         data-parent="#accordion12">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Professor(a)</a></li>
+                                    <li><a href="#">Pesquisador(a)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #B0C4DE;">
+        <div class="row justify-content-center">
+            <div id="accordion" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; "
+                                    data-toggle="collapse"
+                                    data-target="#biologia">
+                                <span class="titulo-biologia">Biologia</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="biologia"
+                         class="collapse"
+                         data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Bioquímico(a)</a></li>
+                                    <li style="margin-bottom: 5px"><a href="#">Professor(a)</a></li>
+                                    <li><a href="#">Pesquisador(a)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion2" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; "
+                                    data-toggle="collapse"
+                                    data-target="#medicina">
+                                <span class="titulo-medicina">Medicina</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="medicina"
+                         class="collapse"
+                         data-parent="#accordion2">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Cardiologista</a></li>
+                                    <li style="margin-bottom: 5px"><a href="#">Neurocirurgião</a></li>
+                                    <li><a href="#">Pediatra</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion3" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px;"
+                                    data-toggle="collapse"
+                                    data-target="#direito">
+                                <span class="titulo-direito">Direito</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="direito"
+                         class="collapse"
+                         data-parent="#accordion3">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Promotor(a) de Defesa</a></li>
+                                    <li style="margin-bottom: 5px"><a href="#">Juiz(a)</a></li>
+                                    <li><a href="#">Advogado(a)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #343a40;">
+        <div class="row justify-content-center">
+            <div id="accordion13" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; color: #007bff;"
+                                    data-toggle="collapse"
+                                    data-target="#arquitetura">
+                                <span class="titulo-arquitetura">Arquitetura</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="arquitetura"
+                         class="collapse"
+                         data-parent="#accordion13">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Urbanista</a></li>
+                                    <li style="margin-bottom: 5px"><a href="#">Paisagista</a></li>
+                                    <li><a href="#">Luminotécnico</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion14" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; color: #007bff;"
+                                    data-toggle="collapse"
+                                    data-target="#farmacia">
+                                <span class="titulo-farmacia">Farmácia</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="farmacia"
+                         class="collapse"
+                         data-parent="#accordion14">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Atendente</a></li>
+                                    <li><a href="#">Carregador(a) de Crédito do Celular</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion15" class="mb-4 mr-auto ml-auto" style="width: 300px">
+                <div class="card" style="margin-top: 20px">
+                    <div class="card-header" style="width: 300px">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light justify-content-center"
+                                    style="width: 250px; font-weight: bold; font-size: 20px; color: #007bff;"
+                                    data-toggle="collapse"
+                                    data-target="#turismo">
+                                <span class="titulo-turismo">Turismo</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="turismo"
+                         class="collapse"
+                         data-parent="#accordion15">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <ul class="list-unstyled mr-auto ml-auto" style="margin-left: 50px; font-size: 22px">
+                                    <li style="margin-bottom: 5px"><a href="#">Guia de Viagem</a></li>
+                                    <li><a href="#">Analista de Turismo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!------------------------------- Footer ------------------------------->
+
+    <footer>
+        <div class="container-fluid" style="margin-top: 15px;">
+            <div class="row justify-content-center">
+                <ul class="list-unstyled text-center">
+                    <li>
+                        <a href="#" >caioguimaraes@id.uff.br</a>
+                    </li>
+                    <li style="margin-top: 5px;">
+                        <a href="#">dcallado@id.uff.br</a>
+                    </li>
+                    <li style="margin-top: 5px;">
+                        <a href="#">jp_abreu@id.uff.br</a>
+                    </li>
+                    <li style="margin-top: 5px;">
+                        <a href="#">raphaelleardini@id.uff.br</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
