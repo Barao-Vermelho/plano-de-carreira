@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bushido</title>
+</head>
+
+<body>
+<header>
+<!------------------------------- Menu ------------------------------->
+    <nav class="navbar navbar-expand-md bg-dark fixded-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="home.html">
+                BUSHIDO
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav mr-auto" style="font-size: 22px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="carreiras.html" id="carreiras">Todas as Carreiras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="instituicoes">Instituições</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="empreas">Empresas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="sobre">Sobre</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="O que você procura?">
+                <button class="btn btn-outline-primary my-2 my-lg-0" type="submit">
+                    <span class="oi oi-magnifying-glass"></span>
+                </button>
+            </form>
+            <a class="nav-item nav-link" data-toggle="modal" data-target="#popUp" href="#" id="login">
+                <span class="oi oi-person" style="font-size: 22px">  Login</span>
+            </a>
+        </div>
+    </nav>
+</header>
+<!------------------------------- Login ------------------------------->
+<div class="modal fade" id="popUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Entrar com e-mail e senha</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span class="oi oi-x"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="inputEmail1">E-mail:</label>
+                        <input type="email" class="form-control" id="inputEmail1"  placeholder="Digite seu e-mail">
+                        <a class="form-text text-right text-primary" href="#">Esqueci minha senha</a>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSenha">Senha:</label>
+                        <input type="password" class="form-control" id="inputSenha" placeholder="Digite sua senha">
+                        <a class="form-text text-right text-primary" href="#">
+                            Não tem uma senha? Cadastre-se agora
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal">
+                    <span class="oi oi-arrow-left"> Voltar</span>
+                </a>
+                <button type="submit" class="btn btn-outline-success">Entrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------------- Main ------------------------------->
+    <h1 class="text-center" style="margin-top: 40px; margin-bottom: 40px; font-size: 50px">Planos de Carreira</h1>
+    <div class="container-fluid bg-dark">
+        <h2 class="text-white" style="margin-bottom: 30px; margin-left: 290px">Desenvolvedor Web</h2>
+        <div class="row justify-content-center">
+            <div id="accordion" class="mb-4">
+                <div class="card">
+                    <div class="card-header cardEspecial" >
+                        <h5 class="mb-0">
+                            <button class="btn btn-link"
+                                    data-toggle="collapse"
+                                    data-target="#t1">
+                                <span class="tituloEspecial">Caminho para Programação Web</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="t1"
+                         class="collapse"
+                         data-parent="#accordion">
+                        <div class="card-body cardEspecial" >
+                            <div class="row mb-2">
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <img class="mr-3" src="images/profissional.jpeg"
+                                             style="width: 100px; height: 100px">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Autor</h5>
+                                            <span class="texto-media-body">Marcos Estellar</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Plano</h5>
+                                            <span class="texto-media-body">Planejamento feito para aqueles que buscam
+                                                serem ótimos desenvolvedores Web </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Data</h5>
+                                            <span class="texto-media-body">Última Atualização em 16/10/2018</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="altura-da-linha">
+                                <a href="planoCarreira.html" class="btn2 btn2-primary btn2-sm btn2-block">Visualizar Plano</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header cardEspecial">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed"
+                                    data-toggle="collapse"
+                                    data-target="#t2">
+                                <span class="tituloEspecial">Seja o mestre da Web</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="t2"
+                         class="collapse"
+                         data-parent="#accordion">
+                        <div class="card-body cardEspecial" >
+                            <div class="row mb-2">
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <img class="mr-3" src="images/profissional2.jpeg" alt="Vila do Abraão"
+                                             style="width: 100px; height: 100px">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Autor</h5>
+                                            <span class="texto-media-body">Rasputin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Plano</h5>
+                                            <span class="texto-media-body">O Gúru da Web cria um plano infalível para
+                                            você se tornar o mestre da Web</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Data</h5>
+                                            <span class="texto-media-body">Última Atualização em 20/20/2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="altura-da-linha">
+                                <a href="#" class="btn2 btn2-primary btn2-sm btn2-block">Visualizar Plano</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header cardEspecial">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed"
+                                    data-toggle="collapse"
+                                    data-target="#t3">
+                                <span class="tituloEspecial">Web lab dev dub wub lub</span>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="t3"
+                         class="collapse"
+                         data-parent="#accordion">
+                        <div class="card-body cardEspecial" >
+                            <div class="row mb-2">
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <img class="mr-3" src="images/temUmabarataNaMinhaCabeca.jpg" alt="Vila do Abraão"
+                                             style="width: 100px; height: 100px">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Autor</h5>
+                                            <span class="texto-media-body">João P.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Plano</h5>
+                                            <span class="texto-media-body">How to become a master class web developer
+                                                from zero to hero </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Data</h5>
+                                            <span class="texto-media-body">Última Atualização em 10/10/2018</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="altura-da-linha">
+                                <a href="#" class="btn2 btn2-primary btn2-sm btn2-block">Visualizar Plano</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------------------------------- Footer ------------------------------->
+
+<footer>
+    <div class="container-fluid" style="margin-top: 15px;">
+        <div class="row justify-content-center">
+            <ul class="list-unstyled text-center">
+                <li>
+                    <a href="#" >caioguimaraes@id.uff.br</a>
+                </li>
+                <li style="margin-top: 5px;">
+                    <a href="#">dcallado@id.uff.br</a>
+                </li>
+                <li style="margin-top: 5px;">
+                    <a href="#">jp_abreu@id.uff.br</a>
+                </li>
+                <li style="margin-top: 5px;">
+                    <a href="#">raphaelleardini@id.uff.br</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

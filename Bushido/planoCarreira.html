@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bushido</title>
+</head>
+
+<body>
+<header>
+    <!------------------------------- Menu ------------------------------->
+    <nav class="navbar navbar-expand-md bg-dark fixded-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="home.html">
+                BUSHIDO
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav mr-auto" style="font-size: 22px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="carreiras.html" id="carreiras">Todas as Carreiras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="instituicoes">Instituições</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="empreas">Empresas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="sobre">Sobre</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="O que você procura?">
+                <button class="btn btn-outline-primary my-2 my-lg-0" type="submit">
+                    <span class="oi oi-magnifying-glass"></span>
+                </button>
+            </form>
+            <a class="nav-item nav-link" data-toggle="modal" data-target="#popUp" href="#" id="login">
+                <span class="oi oi-person" style="font-size: 22px">  Login</span>
+            </a>
+        </div>
+    </nav>
+</header>
+<!------------------------------- Login ------------------------------->
+<div class="modal fade" id="popUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Entrar com e-mail e senha</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span class="oi oi-x"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="inputEmail1">E-mail:</label>
+                        <input type="email" class="form-control" id="inputEmail1"  placeholder="Digite seu e-mail">
+                        <a class="form-text text-right text-primary" href="#">Esqueci minha senha</a>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSenha">Senha:</label>
+                        <input type="password" class="form-control" id="inputSenha" placeholder="Digite sua senha">
+                        <a class="form-text text-right text-primary" href="#">
+                            Não tem uma senha? Cadastre-se agora
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal">
+                    <span class="oi oi-arrow-left"> Voltar</span>
+                </a>
+                <button type="submit" class="btn btn-outline-success">Entrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------------- Main ------------------------------->
+
+<!------------------------------- Footer ------------------------------->
+
+<footer>
+    <div class="container-fluid" style="margin-top: 15px;">
+        <div class="row justify-content-center">
+            <ul class="list-unstyled text-center">
+                <li>
+                    <a href="#" >caioguimaraes@id.uff.br</a>
+                </li>
+                <li style="margin-top: 5px;">
+                    <a href="#">dcallado@id.uff.br</a>
+                </li>
+                <li style="margin-top: 5px;">
+                    <a href="#">jp_abreu@id.uff.br</a>
+                </li>
+                <li style="margin-top: 5px;">
+                    <a href="#">raphaelleardini@id.uff.br</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
