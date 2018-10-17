@@ -7,9 +7,110 @@ body{
     color: white;
 }
 
-.btn:hover, .btn:focus{
-    background-color: transparent;
+
+.btn:hover, .btn:focus {
+        background-color: transparent;
 }
+
+.botaoEspecial {
+    background-color: #007bff;
+}
+
+.cardEspecial {
+    width: 900px;
+}
+
 #mainBody{
     margin-top: 60px;
+}
+
+.tituloEspecial {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn2 {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn2:hover, .btn2:focus {
+    text-decoration: none;
+}
+
+.btn2:focus, .btn2.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn2.disabled, .btn2:disabled {
+    opacity: 0.65;
+}
+
+.btn2:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+a.btn2.disabled,
+fieldset:disabled a.btn2 {
+    pointer-events: none;
+}
+
+.btn2-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn2-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn2-primary:focus, .btn2-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn2-primary.disabled, .btn2-primary:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn2-primary:not(:disabled):not(.disabled):active, .btn2-primary:not(:disabled):not(.disabled).active,
+.show > .btn2-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #005cbf;
+}
+
+.btn2-primary:not(:disabled):not(.disabled):active:focus, .btn2-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn2-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn2-sm, .btn2-group-sm > .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+.btn2-block {
+    display: block;
+    width: 100%;
 }
