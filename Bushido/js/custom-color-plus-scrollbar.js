@@ -18,8 +18,8 @@ var config = {
             name: "Ensino Fundamental",
             description: "Possui os conhecimentos supostos após o nono ano do fundamental",
         },
+        HTMLid: "ceo",
 
-        HTMLid: "ceo"
     },
 
     cto = {
@@ -90,7 +90,9 @@ var config = {
 	    text:{
 		    name: "Desenvolvedor Senior",
 		    description: "Conhecedor das escovas de bits do C, dos padrões de projeto de java, dos parenteses de lisp e das locuras de python"
-	    }
+	    },
+
+        HTMLid: "carreira"
     }
     ALTERNATIVE = [
         config,
